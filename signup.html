@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        TrackingTime
+    </title>
+      
+    <link rel = "icon" href = 
+    "https://trackingtime.co/logo/trackingtime-logo.png" 
+    type = "image/x-icon">
+   <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .left {
+    left: 0;
+    background-color: #111;
+  }
+  .right {
+    right: 0;
+   
+  }
+  .centered1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+  }
+  .centered1 img {
+    width:500px;
+    border-radius: 50%;
+  }
+  .centered2 img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width:155px;
+  }
+  #centered2{
+    margin-top: 100px;
+    margin-left: 260px;
+  }
+  #flexshow1{
+    display: flex;
+    border:1px solid rgb(141, 137, 137);
+    height:auto;
+    width:50%;
+    justify-content:space-around;
+    border-radius:5px;
+  }
+  #flexshow1:hover{
+    background-color: rgb(221, 234, 234);
+  }
+  #flexshow1>img{
+    height:25px;
+    margin-top: 10px;
+  }
+  #flexshow1>p{
+    font-size:15px;
+    color: rgb(101, 99, 99);
+  }
+  #flexshow2{
+    display: flex;
+    border:1px solid rgb(141, 137, 137);
+    margin-top:10px;
+    height:auto;
+    width:50%;
+    justify-content:space-around;
+    border-radius:5px;
+  }
+  #flexshow2:hover{
+    background-color: rgb(221, 234, 234);
+  }
+  #flexshow2>img{
+    height:25px;
+    margin-top: 10px;
+  }
+  #flexshow2>p{
+    font-size:15px;
+    color: rgb(101, 99, 99);
+  }
+  #flexshow3{
+    display: flex;
+    border:1px solid rgb(141, 137, 137);
+    margin-top:10px;
+    height:auto;
+    width:50%;
+    justify-content:space-around;
+    border-radius:5px;
+  }
+  #flexshow3:hover{
+    background-color: rgb(221, 234, 234);
+  }
+  #flexshow3>img{
+    height:40px;
+    margin-top: 6px;
+  }
+  #flexshow3>p{
+    font-size:15px;
+    color: rgb(101, 99, 99);
+  }
+  #para{
+    margin-left: 310px;
+    margin-top: 10px;
+    color: rgb(58, 57, 57);
+  }
+  #details>input{
+       margin: auto;
+       display: block;
+       height:25px;
+       width:30%;
+    }
+    #details>p{
+       margin: auto;
+       display: block;
+       height:25px;
+       width:30%;
+    }
+    #details>button{
+       margin: auto;
+       display: block;
+       height:25px;
+       width:30%;
+       margin-top: 20px;
+    }
+    input{
+      text-align: center;
+    }
+    button{
+         background-color: rgb(77, 75, 75);
+         color:white;
+         font-size: small;
+         border: 0px;
+         border-radius: 5px;
+    }
+    #details>button:hover{
+    background-color:black;
+  }
+    #goback{
+      text-align: center;
+      color: rgb(60, 59, 59);
+    }
+    #details>p>a{
+         /* text-decoration: none; */
+         color:black;
+    }
+    #details>#check{
+      height:15px
+    }
+</style>
+<body>
+    <div class="split left">
+        <div class="centered1">
+          <img src="https://trackingtime.co/wp-content/uploads/2019/12/generico-1.svg" alt="Trakingtimeimg">
+        </div>
+      </div>
+      
+      <div class="split right">
+        <div class="centered2">
+          <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/layout/header/logo.svg" alt="Namelogo">
+           
+        </div>
+        <div id="centered2">
+           <div id="flexshow1">
+            <img  src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif" alt="">
+            <p>Sign up with Google</p>
+           </div>
+           <div id="flexshow2">
+            <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEXz8/PzUyWBvAYFpvD/ugjz9PX19PXz+fr39fr69vPy9fp5uAAAofD/tgDz3Nji6tfzRADzTBfzmYew0oB/xfH70IDX5/P16tfz5eLo7eHzPADzlICs0Hfh6/N3wvH7znj07eEAnvDzvbPL3q6u1/L43q6vy/leAAABd0lEQVR4nO3cR1IDQRREwcb0SEgj770B7n9FNmhEBL1g8zUs8l2gIi9QKUmSpHs5vPtWFV4uANMwunUD3IyiS7+Jebgdx7bddb63uvt+dKOqIBw/xTaZNsLZc3CEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEjxVuJ7GNfwj7LQjTejcN7noTVu+z4PabgjB1wmumqm50JaAkSX/oLbxmKveiK/zqp8NxHtvx40bMn6dFbKdzgbi81MEdb8LeaRDdqiSsX2Kr541wMXiNjZCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkPCxwuj/0kvb/6V5Gd2hmTqvokulm90HluNrFyhJ0j/rC6N0RI28dGy3AAAAAElFTkSuQmCC" alt="">
+            <p>Sign up with Microsoft</p>
+           </div>
+           <div id="flexshow3">
+            <img  src="data:image/png;base64,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" alt="">
+            <p>Sign up with Apple</p>
+           </div>
+        </div>
+
+        <div id="para">
+          <p>Sign up with your email<p>
+        </div>
+
+        <div id="details">
+            <input type="text" id="name" placeholder="Name">
+           <br>
+            <input type="email" id="email" placeholder="Email">
+            <br>
+            <input type="text" id="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <input type="tel" id="mobile" placeholder="Mobile Number">
+            <br>
+            <input type="text" id="description" placeholder="A short description of your's">
+            <input type="checkbox" id="check">
+            <p><b>I agree with </b><a href="https://support.trackingtime.co/en/articles/1956503-terms-of-service" >the Terms of service</a> &
+              <a href="https://support.trackingtime.co/en/articles/1944754-privacy-policy">Privacy Policy</a></p>
+              <button>SIGN UP</button>
+              <p id="goback"> <a href="./login.html">back to login</a></p>
+        </div>
+      </div>
+    
+</body>
+</html>
