@@ -197,12 +197,12 @@
         </div>
 
         <div id="details">
-            <input type="text" id="username" placeholder="Username">
+            <input type="text" id="login_username" placeholder="Username">
             <br>
-            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="login_password" placeholder="Password">
             
             <p id="forgot">Forgot your password? <a href="https://pro.trackingtime.co/#">Retrieve</a></p>
-              <button>LOGIN</button>
+              <button onclick="login()">LOGIN</button>
               <br>
               <p id="goback">Don't have an account? <a href="./signup.html">SIGN UP</a></p>
               <br>
@@ -214,3 +214,56 @@
     
 </body>
 </html>
+<script>
+  let login=async ()=>
+{
+let login_data={
+username:document.getElementById('login_username').value,
+password:document.getElementById('login_password').value,
+};
+
+let res=await fetch(`https://masai-api-mocker.herokuapp.com/auth/login`,{
+  method:'POST',
+  body:JSON.stringify(login_data),
+  headers:{
+      'Content-Type':'application/json',
+  },
+
+});
+
+let data=await res.json();
+//let username=logindata.username;
+
+//let {username}=login_data;
+
+//let {token}=data;
+//getprofile(username,token);
+saveuser(login_data.username,data.token,20000);
+console.log('data:',data);
+
+
+if(login_data.username){
+  alert(`Welcome! ${login_data.username} you are logged in.`);
+}
+else{
+  alert("Wrong Credentials!");
+}
+
+};
+
+
+
+
+let saveuser=(username,token,time)=>{
+  let user={
+      username,
+      token,
+  };
+  localStorage.setItem('user_details',JSON.stringify(user));
+  setTimeout(()=>{
+      localStorage.setItem('user_details',JSON.stringify(null));
+
+  },time);
+}
+
+</script>
