@@ -1,0 +1,60 @@
+#navbar{
+    background-color: coral;
+    height: 60px;
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+#logo img{
+    width: 13%;
+}
+#integrations h1{
+    /* font-weight: 10; */
+    font-size:55px;
+    margin-bottom: -40px;
+    /* margin-top: -1px; */
+}
+#chrome{
+    margin-bottom: -30px;
+}
+#integrations{
+    width: 80%;
+    margin: auto;;
+}
+#youAll{
+    margin-top: 40px;
+    word-spacing: 15px;
+}
+#search{
+    width: 800px;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border-radius: 5%; */
+    border: none;
+    outline: none;
+}
+input{
+    font-size: 30px;
+    color: red;
+}
+::placeholder{
+font-size: 20px;
+color: black;      }
+
+#container img{
+    width: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 25px;
+}
+#container p{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
