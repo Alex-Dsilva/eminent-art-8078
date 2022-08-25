@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Redirect</title>
+
+    <style>
+            #navbar{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        gap: 30px;
+        background-color: #fff;
+        height: 60px;
+        position: sticky;
+        top: 60px;
+        /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        #navbar a{
+
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        }
+
+          #navbar>button{
+
+              height: 100%;
+              text-decoration: none;
+              border: none;
+              background-color: #fff;
+          }
+
+          #navbar>button:hover{
+
+        border-bottom: 2px solid #282828;
+
+        }
+
+         /* -----------------------main div --------------------------*/
+
+            #main{
+                background-color: rgb(136, 175, 243);
+                 /* margin-top: 100px;  */
+                height: 400px;
+            }
+
+            #main>img{
+
+                   width: 550px;
+                   height: 200px;
+                   padding-top: 20px;
+
+            }
+
+            #main>h1{
+
+                  text-align: center;
+                    font-size: 36px;
+                 line-height: 45px;
+                 margin-bottom: 0;
+                text-align: center;
+            color: #fff;
+            font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+            }
+
+            #heading>h1{
+                color: #282828;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 32px;
+                width:50%;
+                margin-top: 50px;
+                margin-left: 200px;
+            }
+
+            #para>p{
+                color: #282828;
+                font-size: 18px;
+                line-height: 28px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                width:50%;
+                margin-left: 200px;
+                font-weight: 500;
+                font: 105.5% -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+            }
+
+            #para_img{
+
+                 margin-top: 80px;
+            }
+
+            #para_img>h2{
+                color: #282828;
+                font-size: 30px;
+                line-height: 28px;
+               margin-bottom: 8px;
+               font-weight: 600;
+               margin-left: 200px;
+            }
+
+            #para_img>p{
+                  
+                color: #282828;
+                font-size: 18px;
+                line-height: 28px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                width:60%;
+                margin-left: 200px;
+                font-weight: 500;
+                font: 105.5% -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+            }
+
+            #para_img>img{
+
+                  width: 500px;
+                  margin-left: 400px;
+                  margin-top: 50px;
+            }
+
+            #list{
+                margin-top: 110px;
+            }
+
+            #list>h2{
+                color: #282828;
+                font-size: 30px;
+                line-height: 28px;
+               margin-bottom: 8px;
+               font-weight: 600;
+               margin-left: 200px;
+               margin-bottom: 20px;
+            }
+
+            #list>p{
+                color: #282828;
+                font-size: 18px;
+                line-height: 28px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                width:60%;
+                margin-left: 200px;
+                font-weight: 800;
+                font: 105.5% -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+
+            }
+
+            #list>ul>li{
+
+                   
+                color: #282828;
+                font-size: 18px;
+                line-height: 28px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                width:60%;
+                margin-left: 200px;
+                font-weight: 800;
+                font: 105.5% -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+            }
+
+            #list>ul>li>a{
+
+                  text-decoration: none;
+                  color: #282828;
+                  border-bottom: 2px solid #282828;
+            }
+
+            
+            #list>img{
+
+                  width: 800px;
+                  margin-left: 300px;
+                  margin-top: 50px;
+                 
+            }
+
+    /* -----------------------blog----------------------------------- */
+
+        #blog{
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 80%;
+        gap: 10px;
+        margin: auto;
+        margin-top: 40px;
+
+        }
+
+        #blog>div{
+
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        width: 95%;
+        height: 350px;
+        margin-bottom: 20px;
+        }
+
+         
+        
+    #blog>div:nth-child(1)>img{
+          background-color:rgb(122,220,180) ;
+    }
+
+    #blog>div:nth-child(2)>img{    
+        background-color:#b88be3;      
+  }
+
+
+  #blog>div:nth-child(3)>img{      
+    background-color:rgb(251,105,98);   
+}
+
+
+
+#blog>div>h4{
+        color: #282828;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 0 25px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+       
+    }
+
+    #anchor{
+          margin-top: 200px;
+          margin-left: 160px;
+
+    }
+
+    #anchor>a{
+         text-decoration: none;
+         color: #282828;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-weight: 400;
+
+    }
+
+    /* ------------------LINE------------------- */
+
+    #line{
+            
+        border-bottom:1px solid #282828;
+        width: 300px;
+        margin-left: 200px;
+        margin-top: 40px;
+
+    }
+           
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+
+          <button><a href="blog.html">BLOG </a></button>
+         <button><a href="">PRODUCTIVITY </a></button> 
+         <button><a href="">REMOTE WORK </a></button>
+         <button><a href="">BEST PRACTICES </a></button>
+         <button><a href="">RESOURCES</a></button>
+
+       </div>
+
+    
+
+
+      <div id="main">
+        
+            <img src="https://trackingtime.co/wp-content/uploads/2022/08/Remote-Work-Productivity-Tricks-and-Tools.svg" alt="">
+            <h1>The Remote Work Productivity Tricks and Tools You Need to Know</h1>
+
+      </div>
+
+      <div id="heading">
+
+        <h1>Millions of professionals worldwide unwillingly started full-time remote work 
+            from home due to the coronavirus pandemic. Remote work brings different challenges, 
+            so you’ll need to have your own unique set of tools and productivity tips to tackle them.</h1>
+
+      </div>
+
+      <div id="para">
+         <p>People say remote work can be a litmus test for your productivity. Many believe efficiency is lost because of the comfort remote work provides. 
+            But it’s actually about mastering those basics – something people tend to neglect when they’re too comfortable at their desks.</p>
+
+            <p>The particular aspects of remote work mean you’ll have to plan if you want it done well, develop those few good habits, 
+                and follow those essential suggestions to overcome any challenges.</p>
+
+                <p>Loads of productivity tips and tools will help you along the way, and we’ll go through some of them in this article to understand how 
+                    to succeed at working from home.</p>
+      </div>
+
+      
+      <div id="para_img">
+
+        <h2>What is remote work?</h2>
+        <p>Remote work is an operating style that lets professionals do their jobs outside of a corporate office. When you’re remote,
+             you can work from anywhere and go wherever in the world you want to go. </p>
+
+             <p>As a remote employee, there are no limitations on your schedule or what projects/tasks to complete – it’s all up to your preferences. The only thing remote employees have on their minds is: how they spend their time and,
+                 being able to experience their personal life with no worries about pressures by an employer.</p>
+
+                 <img src="https://trackingtime.co/wp-content/uploads/2022/08/4_core_facets_remote_work_success-768x592.png" alt="">
+
+      </div>
+
+      <!-- -------------------list div ------------------------->
+
+
+      <div id="list">
+
+        <h2>What benefits do remote work offer?</h2>
+
+        <p>For employers, hiring remote workers has the following advantages:</p>
+
+        <ul>
+            <li>Lower costs since space and resources are not required in a physical office.</li>
+            <li>There is a broader pool of applicants because the distance isn’t an issue.</li>
+            <li>Employees can also work from different time zones, making it easier to provide 24/7 customer support.&nbsp;</li>
+        </ul>
+
+        <p>As for the employee’s perspective:</p>
+
+        <ul>
+            <li><a href="https://trackingtime.co/blog/what-are-you-saying-no-to.html" target="_blank" rel="noreferrer noopener">Higher productivity</a> and greater professional engagement among employees.&nbsp;</li>
+            <li>Flexible work schedules often mean working at home or on their terms with no commute.</li>
+            <li>Better work-life balance.</li>
+        </ul>
+
+
+
+        <img src="https://trackingtime.co/wp-content/uploads/2022/08/remote-work-2-768x423.jpg" alt="">
+
+        <p>
+            Though there may be some disadvantages, such as feeling isolated or not being around coworkers for support all day,
+             productivity tips help to outweigh the cons
+        </p>
+
+      </div>
+
+
+      <!----------------------- LINE------------------------- -->
+
+          <div id="line">
+
+          </div>
+    
+
+       <!-- --------------------------anchor------------- -->
+
+      <div id="anchor">
+        <a href="blog.html">BLOG</a>
+
+      </div>
+
+      <!-- ----------------------blog-------- -->
+      <div id="blog">
+
+
+        <div >
+              <img src="https://trackingtime.co/wp-content/uploads/2019/12/generico-1.svg" alt="">
+              <h4>5 Best Ways to Reduce and Manage Overtime for Employees</h4>
+
+        </div>
+
+        <div >
+             <img src="https://trackingtime.co/wp-content/uploads/2022/07/digital-marketing-agency-tools.svg" alt="">
+             <h4>Must-Have Digital Marketing Agency Tools in 2022</h4>
+            </div>
+
+        <div>
+            <img src="https://trackingtime.co/wp-content/uploads/2022/07/Solve-Your-Freelancing-Productivity-and-Budget-Problems.svg" alt="">
+            <h4>How Time Tracking Can Solve Your Freelancing Productivity and Budget Problems</h4>
+        </div>
+
+    
+</body>
+</html>
