@@ -118,40 +118,40 @@
 
 
     #articl-div>div:nth-child(1)>img{
-          background-color:rgb(122,220,180) ;
+          background-color:#00d084 ;
     }
 
     #articl-div>div:nth-child(2)>img{    
-        background-color:#b88be3;      
+        background-color:#f4c33c;      
   }
 
 
   #articl-div>div:nth-child(3)>img{      
-    background-color:rgb(251,105,98);   
+    background-color:#cf2e2e;   
 }
 
 #articl-div>div:nth-child(4)>img{      
-    background-color:#0693e3
+    background-color:#343434
 }
 
 #articl-div>div:nth-child(5)>img{       
-    background-color:#f6c235;   
+    background-color:rgb(89, 109, 206);   
 }
 
 #articl-div>div:nth-child(6)>img{       
-    background-color:#f78da7;   
+    background-color:rgb(237, 83, 83);   
 }
 
 #articl-div>div:nth-child(7)>img{       
-    background-color:#343434;   
+    background-color:rgb(120, 230, 186);   
 }
 
 #articl-div>div:nth-child(8)>img{      
-    background-color:rgb(251,105,98);   
+    background-color:#abb8c3;   
 }
 
 #articl-div>div:nth-child(9)>img{       
-    background-color:#f6c235;   
+    background-color:rgb(90, 177, 227);   
 }
 
 
