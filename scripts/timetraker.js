@@ -46,3 +46,7 @@ if(n==1){
 }
     
 }
+
+import navbar1  from './footer.js';
+
+console.log(navbar1);
