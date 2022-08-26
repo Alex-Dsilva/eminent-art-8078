@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products- Redirect</title>
+
+    <style>
+            #navbar{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        gap: 30px;
+        background-color: #fff;
+        height: 60px;
+        position: sticky;
+        top: 60px;
+        /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        #navbar a{
+
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        }
+
+          #navbar>button{
+
+              height: 100%;
+              text-decoration: none;
+              border: none;
+              background-color: #fff;
+          }
+
+          #navbar>button:hover{
+
+        border-bottom: 2px solid #282828;
+
+        }
+
+         /* -----------------------main div --------------------------*/
+
+            #main{
+                background-color: #0693e3;
+                 /* margin-top: 100px;  */
+                height: 400px;
+            }
+
+            #main>img{
+
+                   width: 550px;
+                   height: 200px;
+                   padding-top: 20px;
+
+            }
+
+            #main>h1{
+
+                  text-align: center;
+                    font-size: 36px;
+                 line-height: 45px;
+                 margin-bottom: 0;
+                text-align: center;
+            color: #fff;
+            font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+            }
+
+            #heading>h1{
+                color: #282828;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 32px;
+                width:60%;
+                margin-top: 50px;
+                margin-left: 200px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #para>p{
+                color: #282828;
+                font-size: 16px;
+                line-height: 28px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                width:50%;
+                margin-left: 200px;
+                font-weight: 500;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #para_img{
+
+                 margin-top: 80px;
+            }
+
+            #para_img>h2{
+                color: #282828;
+                font-size: 28px;
+                line-height: 28px;
+               margin-bottom: 8px;
+               font-weight: 500;
+               margin-left: 200px;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #para_img>p{
+                  
+                color: #282828;
+                font-size: 16px;
+                line-height: 28px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                width:60%;
+                margin-left: 200px;
+                font-weight: 500;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #para_img>img{
+
+                  width: 500px;
+                  margin-left: 400px;
+                  margin-top: 50px;
+            }
+
+
+            /*--------------------------- LIST  ---------------------------*/
+
+            #list{
+                margin-top: 110px;
+            }
+
+            #list>h2{
+                color: #282828;
+                font-size: 28px;
+                line-height: 28px;
+               margin-bottom: 8px;
+               font-weight: 600;
+               margin-left: 200px;
+               margin-bottom: 20px;
+               font-weight: 500;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #list>p{
+                color: #282828;
+                font-size: 16px;
+                line-height: 28px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                width:60%;
+                margin-left: 200px;
+                font-weight: 500;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            }
+
+          
+          
+
+    /* -----------------------blog----------------------------------- */
+
+        #blog{
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 80%;
+        gap: 10px;
+        margin: auto;
+        margin-top: 40px;
+
+        }
+
+        #blog>div{
+
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        width: 95%;
+        height: 350px;
+        margin-bottom: 20px;
+        }
+
+         
+        
+    #blog>div:nth-child(1)>img{
+          background-color:rgb(122,220,180) ;
+    }
+
+    #blog>div:nth-child(2)>img{    
+        background-color:#b88be3;      
+  }
+
+
+  #blog>div:nth-child(3)>img{      
+    background-color:rgb(251,105,98);   
+}
+
+
+
+#blog>div>h4{
+        color: #282828;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 0 25px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+       
+    }
+
+    #anchor{
+          margin-top: 200px;
+          margin-left: 160px;
+
+    }
+
+    #anchor>a{
+         text-decoration: none;
+         color: #282828;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-weight: 400;
+
+    }
+
+    /* ------------------LINE------------------- */
+
+    #line{
+            
+        border-bottom:1px solid #282828;
+        width: 300px;
+        margin-left: 200px;
+        margin-top: 40px;
+
+    }
+
+
+   /* ---------------------------------RELATED -------------------------*/
+       #relate{
+
+        margin-left: 200px;
+        margin-top: 40px;
+       }
+         
+       #relate>h3{
+
+        color: #282828;
+        font-size: 18px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+       }
+
+       #relate>ul>li{
+        
+        margin-left: -20px;
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        
+
+    }
+
+    #relate>ul>li>a{
+        color: #282828;
+        text-decoration: none;
+        border-bottom: 1px solid #282828;
+
+    }
+           
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+
+          <button><a href="blog.html">BLOG </a></button>
+         <button><a href="product.html">PRODUCTIVITY </a></button> 
+         <button><a href="remote.html">REMOTE WORK </a></button>
+         <button><a href="best.html">BEST PRACTICES </a></button>
+         <button><a href="resource.html">RESOURCES</a></button>
+
+       </div>
+
+    
+
+
+      <div id="main">
+        
+            <img src="https://trackingtime.co/wp-content/uploads/2019/12/generico-1.svg" alt="">
+            <h1>5 Best Ways to Reduce and Manage Overtime for Employees</h1>
+
+      </div>
+
+      <div id="heading">
+
+        <h1>The consistent productivity level of the workers is essential for enhancing business performance. The tasks sometimes require more hours to complete, 
+            and because of that, the workers are often required to extend their shifts by several hours. It is necessary for business owners and managers to handle overtime wisely – to keep the processes running smoothly at pre-set manpower costs and, at the same time, avoid employee burnout.</h1>
+
+      </div>
+
+      <div id="para">
+         <p>An increase in employee burnout rate causes a high employee turnover rate. 
+            This may lead to poor business performance due to decreased employee productivity.
+             Here are practical tips to help you manage overtime issues and create a fine balance between productivity and output. </p>
+
+
+      </div>
+
+      
+      <div id="para_img">
+
+        <h2>Evaluate workload assigned to employees</h2>
+        <p>A company may record more business at specific times. This may require workers to work overtime.
+             You may notice some employees are consistently finishing their work late. Working overtime for a few days only can be acceptable.
+             However, it becomes a challenge when this is the norm.  </p>
+
+             <p>The workers with more workload may feel they are being overworked. They can become fatigued and decrease productivity. 
+                Some workers may develop higher levels of fatigue and require sick leave. 
+                You may want to evaluate the workload assigned to each employee. </p>
+
+             <p>Some of the workers might have too much work. The job descriptions might not be clear. 
+              There might not be a clear flow of communication between managers and their teams. 
+                  One of the best solutions is to create</p>
+                  <p>a positive company culture where communication flows seamlessly, and problems are addressed in the quickest possible time. 
+                    Another solution is to distribute the workload in a balanced way. </p>
+
+      </div>
+
+      <!-- -------------------list div ------------------------->
+
+
+      <div id="list">
+
+        <h2>Invest in upskilling and reskilling</h2>
+
+        <p>Workers who have the right skills can be more productive. They can complete their tasks quickly without the need for overtime. 
+            Workers who lack the right skills can spend more time completing the same task. 
+            They may require overtime often, which increases the overall cost of running the business. </p>
+
+        
+
+        <p>
+            The best solution to reduce the need for overtime is to upskill and reskill employees. 
+            Establish the training needs of each employee and provide it. 
+            It gives a chance for employees who joined at the entry level to advance their careers. 
+            It is a good way to improve employee satisfaction rates and motivate them. 
+            The employer should use available resources to bring innovation to the workplace for enhanced productivity.
+        </p>
+
+
+        <p>
+            Reskilled workers can perform a wider range of tasks.
+             It ensures workers in each shift can perform all duties for the shift correctly and fast. 
+             Upskilling may involve skill diversification through cross-training. 
+            It enables workers to work better in teams and complete tasks without overtime. 
+
+        </p>
+
+      </div>
+
+
+      <!----------------------- LINE------------------------- -->
+
+          <div id="line">
+
+          </div>
+
+    <!-- -------------------------RELATED LIST--------------------------------------  -->
+
+          <div id="relate">
+
+
+            <h3 >Related Articles</h3>
+            <ul >
+                <li><a href="https://trackingtime.co/features/time-cards">Time cards to track your employees’ hours</a></li>
+                <li><a href="https://trackingtime.co/resources/employee-timekeeper-for-flsa-compliance.html">Employee Timekeeper for FLSA Compliance</a></li>
+                <li><a href="https://trackingtime.co/remote-work/working-remotely-collaboration-tools-for-teams.html">Working Remotely: Collaboration Tools for Teams</a></li>
+                <li><a href="https://trackingtime.co/resources/free-time-card-calculator.html">Free Time Card Calculator</a></li>
+                <li><a href="https://trackingtime.co/remote-work/hybrid-work-how-to-collaborate-smartly.html">Hybrid Work: How to Collaborate Smartly</a></li>
+            </ul>
+          </div>
+
+    
+
+       <!-- --------------------------anchor------------- -->
+
+      <div id="anchor">
+        <a href="blog.html">BLOG</a>
+
+      </div>
+
+      <!-- ----------------------blog-------- -->
+      <div id="blog">
+
+
+        <div >
+              <img src="https://trackingtime.co/wp-content/uploads/2019/12/generico-1.svg" alt="">
+              <h4>5 Best Ways to Reduce and Manage Overtime for Employees</h4>
+
+        </div>
+
+        <div >
+             <img src="https://trackingtime.co/wp-content/uploads/2022/07/digital-marketing-agency-tools.svg" alt="">
+             <h4>Must-Have Digital Marketing Agency Tools in 2022</h4>
+            </div>
+
+        <div>
+            <img src="https://trackingtime.co/wp-content/uploads/2022/07/Solve-Your-Freelancing-Productivity-and-Budget-Problems.svg" alt="">
+            <h4>How Time Tracking Can Solve Your Freelancing Productivity and Budget Problems</h4>
+        </div>
+
+    
+</body>
+</html>
