@@ -26,7 +26,7 @@ a {
     text-decoration: none;
 }
 #vidhayak{
-    color: #282828;
+    color: #242a30;
 }
 
 #free,#login {
@@ -135,14 +135,14 @@ option:hover {
     color: #00ad95 !important;
 }
 
-.container {
+.container796 {
     margin: auto;
     margin-top: 30px;
 
     width: 60%
 }
 
-.container>h1 {
+.container796>h1 {
     text-align: center;
 
     color: #282828;
@@ -153,12 +153,12 @@ option:hover {
     font-weight: 700;
 }
 
-.container>h4 {
+.container796>h4 {
     text-align: center;
     color: #00ad95 !important
 }
 
-.container>h2 {
+.container796>h2 {
     text-align: center;
 
     color: #282828;
