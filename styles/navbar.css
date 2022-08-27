@@ -1,4 +1,3 @@
-
 img {
     width: 150px;
     margin-left: 40px;
@@ -8,11 +7,11 @@ img {
     display: flex;
     position: sticky;
     height: 50px;
-    padding:20px 0px;
+    padding: 20px 0px;
     top: 0px;
     justify-content: space-around;
-     z-index: 100;
-    background-color: #f6f8f9;
+    z-index: 100;
+    background-color: #fff !important;
 }
 
 .navigation>a {
@@ -25,11 +24,13 @@ a {
     padding: 15px;
     text-decoration: none;
 }
-#vidhayak{
+
+#vidhayak {
     color: #242a30;
 }
 
-#free,#login {
+#free,
+#login {
     padding: 10px 0;
     min-width: 140px;
     height: 36px;
@@ -51,13 +52,13 @@ a {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     border-color: #00ad95;
-    color: #00ad95 !important;
-    text-decoration: none;
+    color: #00ad95;
+    /* text-decoration: none; */
 }
 
 #free {
     margin: 0px 10px;
-    color: #f6f8f9;
+    /* color: #f6f8f9; */
     font-size: 12px;
     font-weight: 500;
     letter-spacing: .14em;
@@ -65,7 +66,7 @@ a {
     text-transform: uppercase;
     margin-left: 36px;
     text-decoration: none;
-    color: #00ad95 !important;
+    color: #00ad95;
     ;
 }
 
@@ -81,21 +82,23 @@ a {
     text-decoration: none;
 
     transition: all .3s ease-out;
-    /* background: #00ad95; */
+
 
 }
 
 #free:hover {
-    background-color: #00ad95 !important;
+    background-color: #00ad95;
     font-weight: 900;
-    color: #f6f8f9;
+    color: #fff;
 
 }
 
 #login:hover {
-    background-color: #00ad95 !important;
-    color: #f6f8f9;
+    color: #fff;
+    font-weight: 900;
+    background-color: #00ad95;
 
+ 
 
 }
 
@@ -155,6 +158,7 @@ option:hover {
 }
 
 .container796>h4 {
+
     text-align: center;
     color: #00ad95 !important
 }
@@ -173,7 +177,8 @@ option:hover {
 }
 
 .container786 {
-    display: flex;
+
+
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
@@ -213,6 +218,7 @@ option:hover {
 
     margin: auto;
     margin-top: 60px;
+    margin-left: 140px;
 }
 
 .google>img {
@@ -229,11 +235,12 @@ option:hover {
 }
 
 .container4 {
-    border: 1px solid red;
-    height: 350px;
+
+    height: 250px;
     margin-top: 20px;
 }
- .container4>h2 {
+
+.container4>h2 {
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
@@ -242,11 +249,12 @@ option:hover {
     margin-bottom: 50px !important;
     text-align: center;
     /* margin-top: 40px; */
-} 
+}
 
 .container3 {
     width: 90%;
     margin: auto;
+
 
 }
 
@@ -677,21 +685,25 @@ option:hover {
 
 
 }
-.container9{
+
+.container9 {
     width: 90%;
     margin: auto;
     margin-top: 90px;
     display: flex;
     gap: 20px;
 }
-.dogesh{
+
+.dogesh {
     display: flex;
-   
-}
-.social{
-width: 30%;
 
 }
+
+.social {
+    width: 30%;
+
+}
+
 #para {
     color: #282828;
     text-decoration: underline;
@@ -708,41 +720,86 @@ width: 30%;
     margin: 0 0 11px;
     margin-left: 70px;
 }
-.choose{
+
+.choose {
     margin-left: 20px;
-  border: none;
-  color: #282828;
+    border: none;
+    color: #282828;
     padding: 10px 20px;
     vertical-align: middle;
 }
-#Laungage{
-padding: 8px 20px;
-border: none;
-border: none!important;
-padding-top: 30px!important;
-width: 160px!important;
-font-size: 12px;
-font-weight: 900!important;
-letter-spacing: .14em;
-line-height: 24px;
-text-transform: uppercase;
+
+#Laungage {
+    padding: 8px 20px;
+    border: none;
+    border: none !important;
+    padding-top: 30px !important;
+    width: 160px !important;
+    font-size: 12px;
+    font-weight: 900 !important;
+    letter-spacing: .14em;
+    line-height: 24px;
+    text-transform: uppercase;
 }
-#Laungage>option{
-color: #282828;
-font-size: 12px;
-font-weight: 400;
-line-height: 27.98px;
-margin: 0 0 1px;
+
+#Laungage>option {
+    color: #282828;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27.98px;
+    margin: 0 0 1px;
 }
-.social>a:hover{
-color: black;
-background-color: white;
+
+.social>a:hover {
+    color: black;
+    background-color: white;
 
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-.you{
+
+.you {
     position: relative;
     left: 18px;
+}
+
+#vidhayak {
+    margin-left: 8px;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+
+    padding: 12px 30px;
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+    background-color: #00ad95;
+    text-transform: uppercase;
+    color: #fff !important;
+    top: 4px;
+
+    border-radius: 7px;
+}
+
+#vidhayak:hover {
+    background-color: #028462 !important;
+}
+
+.carousel {
+    width: 90%;
+    margin: auto;
+    border: none;
+}
+
+.skip-lazy {
+    width: 390px !important;
+    height: 62px !important;
+}
+
+.carousel-cell>.skip-lazy {
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: all .25s ease 0s;
 }
