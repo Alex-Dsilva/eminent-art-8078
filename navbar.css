@@ -25,6 +25,9 @@ a {
     padding: 15px;
     text-decoration: none;
 }
+#vidhayak{
+    color: #242a30;
+}
 
 #free,#login {
     padding: 10px 0;
@@ -133,14 +136,14 @@ option:hover {
     color: #00ad95 !important;
 }
 
-.container {
+.container796 {
     margin: auto;
     margin-top: 30px;
 
     width: 60%
 }
 
-.container>h1 {
+.container796>h1 {
     text-align: center;
 
     color: #282828;
@@ -151,12 +154,12 @@ option:hover {
     font-weight: 700;
 }
 
-.container>h4 {
+.container796>h4 {
     text-align: center;
     color: #00ad95 !important
 }
 
-.container>h2 {
+.container796>h2 {
     text-align: center;
 
     color: #282828;
@@ -169,7 +172,7 @@ option:hover {
     margin-top: 30px;
 }
 
-.container1 {
+.container786 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -230,8 +233,7 @@ option:hover {
     height: 350px;
     margin-top: 20px;
 }
-
-.container4>h2 {
+ .container4>h2 {
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
@@ -240,7 +242,7 @@ option:hover {
     margin-bottom: 50px !important;
     text-align: center;
     /* margin-top: 40px; */
-}
+} 
 
 .container3 {
     width: 90%;
@@ -739,4 +741,8 @@ background-color: white;
 }
 ul{
     list-style-type: none;
+}
+.you{
+    position: relative;
+    left: 18px;
 }
