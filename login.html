@@ -102,13 +102,15 @@
     width:50%;
     justify-content:space-around;
     border-radius:5px;
+    align-items: center;
   }
   #flexshow3:hover{
     background-color: rgb(221, 234, 234);
   }
   #flexshow3>img{
     height:40px;
-    margin-top: 6px;
+    /* margin-top: 6px; */
+    border-radius:50%;
   }
   #flexshow3>p{
     font-size:15px;
@@ -187,22 +189,22 @@
             <p>Sign up with Microsoft</p>
            </div>
            <div id="flexshow3">
-            <img  src="data:image/png;base64,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" alt="">
+            <img src="data:image/png;base64,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" alt="">
             <p>Sign up with Apple</p>
            </div>
         </div>
 
         <div id="para">
-          <p>Sign up with your email<p>
+          <p>Login with your email<p>
         </div>
 
         <div id="details">
-            <input type="text" id="username" placeholder="Username">
+            <input type="email" id="email" placeholder="Email">
             <br>
             <input type="password" id="password" placeholder="Password">
             
             <p id="forgot">Forgot your password? <a href="https://pro.trackingtime.co/#">Retrieve</a></p>
-              <button>LOGIN</button>
+              <button onclick="login()">LOGIN</button>
               <br>
               <p id="goback">Don't have an account? <a href="./signup.html">SIGN UP</a></p>
               <br>
@@ -214,3 +216,35 @@
     
 </body>
 </html>
+<script>
+
+           let arr=JSON.parse(localStorage.getItem("list"))||[];
+
+            function login()
+            {
+             event.preventDefault();
+             let obj={
+            personemail2:document.querySelector("#email").value,
+            personpassword2:document.querySelector("#password").value,
+          }
+          let flag=false;
+          for(let i=0;i<arr.length;i++)
+          {
+            let char=arr[i];
+            if(char.personemail==obj.personemail2 && char.personpassword==obj.personpassword2)
+            {
+                flag=true;
+            }
+          }
+          if(flag==true)
+          {
+            alert("You are successfully Logged In");
+          }
+          else
+          {
+            alert("Wrong Credential");
+          }
+            
+        }
+
+</script>
