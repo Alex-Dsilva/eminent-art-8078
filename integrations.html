@@ -6,11 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrations</title>
     <link rel="stylesheet" href="integrations.css">
-
+    <link rel="stylesheet" href="navbar.css">
+   <style>
+    
+   </style>
 </head>
 <body>
-    <div id="navbar">
-    <div id="logo"><img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/layout/header/logo.svg" alt=""></div>
+    <div class="display">
+        <div class="logo">
+            
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/layout/header/logo.svg"
+                    alt="TrackingTime">
+            
+
+        </div>
+        <div class="navigation">
+            <a href="integrations.html">INTEGRATIONS</a>
+            <a href="blog.html">BLOG</a>
+            <select name="FEATURES" id="feature">
+                <a href="">
+                    <option value="">FEATURE</option>
+                </a>
+                <a href="Time Tracker.html" class="we1">
+                    <option value="" id="features" class="we1">Time Tracker</option>
+                </a>
+                <a href="Project Management.html" class="we1">
+                    <option value="" class="we1">Project Management</option>
+                </a>
+                <a href="Online Timesheet.html">
+                    <option value="" class="we1">Online Timesheet</option>
+                </a>
+                <a href="Time Cards">
+                    <option value="" class="we1">Time Cards</option>
+                </a>
+                <a href="Attendence Tracking.html">
+                    <option value="" class="we1">Attendence Tracking</option>
+                </a>
+                <a href="Time Reporting.html">
+                    <option value="" class="we1">Time Reporting</option>
+                </a>
+            </select>
+            <button id="free"><a href="login">Try it Free</a></button>
+            <button id="login"><a href="login">LOGIN</a></button>
+        </div>
+
+    </div>
+       
+
     </div>
         <div id="integrations">
              <h2 id="chrome">TRACKING TIME BUTTON FOR CHROME</h2>
@@ -20,12 +62,49 @@
              <input type="text" name="" id="search" oninput="displayFunc()" placeholder="SEARCH YOUR FAVOURITE APP!">
             
         </div>
+        <div id="paras">
+            <p>Improve your time tracking and increase your productivity with these Integrations. <br>
+            See how much time you spend on each task or project! TrackingTime's integrations make it easy to keep track of your billable and non-billable tasks by integrating with more than 30 apps. </p>
+            <p>TrackingTime can be integrated with other apps, such as project management, accounting, and customer support. Get instant timesheets and analytics with TrackingTime!</p>
+        </div>
        
            <div id="articles">
                 <p></p>
            </div>
         </div>
         <div id="container"></div>
+        <div id="download">
+            <div id="mobile"><img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/temp/home/download-section/phone.png" alt=""></div>
+            <div>
+                <h2>Track Everywhere</h2>
+                <p>Track your time everywhere you work with our mobile apps for iOS and Android.</p>
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/temp/home/download-section/playstore.png" alt="">
+                <img  src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/temp/home/download-section/apstore.png" alt="">
+            </div>
+        </div>
+        <div class="container8">
+            <img class="ttimg" style="width: 100px;" src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/layout/footer/tt.svg"
+                alt="TrackingTime">
+            <h4>Get Started</h4>
+            <p class="getp">Sign up today and join thousands of people around the world using <br>
+                TrackingTime to make the most of their time.</p>
+            <div class="googlelink">
+                <div class="chowmein">
+                    <input type="text" id="know" placeholder="Your Work Email">
+                    <a href="login.html" id="know1">Start For Free</a>
+    
+                </div>
+                <p id="burger">14-day PRO trial included</p>
+                <div class="linkbazzi">
+                    <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/keywords/google-key.png"
+                        alt="google icon">
+                    <a href="https://app.trackingtime.co/v4/google/signin?action=signup&amp;redirect_to=https://pro.trackingtime.co/"
+                        data-comp="SignupWithGoogle" target="_blank" id="alpha">Sign in with Google</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer"></div>
 </body>
 <script>
     
@@ -46,11 +125,12 @@
     function display(read){
         // console.log("cool")
         document.querySelector('#container').innerHTML = '';
-        read.forEach(function(element){
+        read.forEach(function(element,ind){
 
               let divi = document.createElement('div');
             divi.addEventListener("click",function(){
-                      display3()
+                window.location.href = element.page;
+                      console.log(ind)
                    })
             let pic = document.createElement('img');
             pic.src = element.imageUrl;
@@ -90,10 +170,11 @@
                 console.log(1234)
             }
       }
-      function display3(){
-           
-            
-            window.location.href = "https://trackingtime.co/time-tracker-for-airtable"
-           }
+   
+</script>
+<script type="module">
+    import navbar1 from './footer.js'
+  let   footer=document.getElementById("footer");
+    footer.innerHTML=navbar1;
 </script>
 </html>

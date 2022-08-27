@@ -10,8 +10,8 @@ img {
     padding: 20px 0px;
     top: 0px;
     justify-content: space-around;
-
-    background-color: #f6f8f9;
+    z-index: 100;
+    background-color: #fff !important;
 }
 
 .navigation>a {
@@ -52,13 +52,13 @@ a {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     border-color: #00ad95;
-    color: #00ad95 !important;
-    text-decoration: none;
+    color: #00ad95;
+    /* text-decoration: none; */
 }
 
 #free {
     margin: 0px 10px;
-    color: #f6f8f9;
+    /* color: #f6f8f9; */
     font-size: 12px;
     font-weight: 500;
     letter-spacing: .14em;
@@ -66,7 +66,7 @@ a {
     text-transform: uppercase;
     margin-left: 36px;
     text-decoration: none;
-    color: #00ad95 !important;
+    color: #00ad95;
     ;
 }
 
@@ -82,21 +82,23 @@ a {
     text-decoration: none;
 
     transition: all .3s ease-out;
-    /* background: #00ad95; */
+
 
 }
 
 #free:hover {
-    background-color: #00ad95 !important;
+    background-color: #00ad95;
     font-weight: 900;
-    color: #f6f8f9;
+    color: #fff;
 
 }
 
 #login:hover {
-    background-color: #00ad95 !important;
-    color: #f6f8f9;
+    color: #fff;
+    font-weight: 900;
+    background-color: #00ad95;
 
+ 
 
 }
 
@@ -112,6 +114,7 @@ button>a {
 
 #feature:hover {
     color: #00ad95 !important;
+    background-color: white;
 }
 
 #feature>select {
@@ -155,6 +158,7 @@ option:hover {
 }
 
 .container796>h4 {
+
     text-align: center;
     color: #00ad95 !important
 }
@@ -173,7 +177,8 @@ option:hover {
 }
 
 .container786 {
-    display: flex;
+
+
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
@@ -213,6 +218,7 @@ option:hover {
 
     margin: auto;
     margin-top: 60px;
+    margin-left: 140px;
 }
 
 .google>img {
@@ -761,19 +767,19 @@ ul {
 
 #vidhayak {
     margin-left: 8px;
-    position:relative;
+    position: relative;
     /* justify-content: center; */
     align-items: center;
-   text-align: center;
-    height: 40px;
-    padding: 0px 30px;
+    text-align: center;
+
+    padding: 12px 30px;
     font-size: 15px;
     letter-spacing: 1.4px;
     cursor: pointer;
     background-color: #00ad95;
     text-transform: uppercase;
     color: #fff !important;
-   top: 4px;
+    top: 4px;
 
     border-radius: 7px;
 }
@@ -781,6 +787,7 @@ ul {
 #vidhayak:hover {
     background-color: #028462 !important;
 }
+
 .carousel {
     width: 90%;
     margin: auto;
