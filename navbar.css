@@ -11,7 +11,7 @@ img {
     padding:20px 0px;
     top: 0px;
     justify-content: space-around;
-
+     z-index: 100;
     background-color: #f6f8f9;
 }
 
@@ -26,7 +26,7 @@ a {
     text-decoration: none;
 }
 
-button {
+#free,#login {
     padding: 10px 0;
     min-width: 140px;
     height: 36px;
@@ -108,6 +108,7 @@ button>a {
 
 #feature:hover {
     color: #00ad95 !important;
+    background-color: white;
 }
 
 #feature>select {
