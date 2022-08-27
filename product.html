@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productivity | TrackingTime</title>
 
-    
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
    
 </head>
 <body>
@@ -102,29 +102,14 @@
 </body>
 </html>
 
-
-
-
+<script src="./js/function.js"></script>
 <script type="module">
 
-import {navbar ,footer} from './commonarea/nav-foot.js'
-document.getElementById("nav").innerHTML=navbar();
-
-document.getElementById("footer").innerHTML=footer();
-
-
-</script>
-
-<script>
-
-let pro=()=>{
-
-window.location.href="product-1.html"
-console.log("yes")
-}
-
-document.getElementById("div2").addEventListener("click",pro)
-</script>
-
-
+    import {navbar ,footer} from './components/navbar.js'
+    document.getElementById("nav").innerHTML=navbar();
+    
+    document.getElementById("footer").innerHTML=footer();
+    
+    
+    </script>
 
