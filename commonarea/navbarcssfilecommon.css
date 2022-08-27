@@ -1,0 +1,100 @@
+
+img {
+    width: 150px;
+    margin-left: 40px;
+}
+
+.display {
+    display: flex;
+    position: sticky;
+    height: 50px;
+    padding:20px 0px;
+    top: 0px;
+    justify-content: space-around;
+
+    background-color: #f6f8f9;
+}
+
+.navigation>a {
+    color: black;
+    font-weight: bolder;
+
+}
+
+a {
+    padding: 15px;
+    text-decoration: none;
+}
+#vidhayak{
+    color: #242a30;
+}
+
+#free,#login {
+    padding: 10px 0;
+    min-width: 140px;
+    height: 36px;
+    transition: all .3s ease-out;
+    display: inline-block;
+    border: 2px solid #00ad95;
+    line-height: 0 !important;
+    font-size: 12px;
+    font-weight: 900 !important;
+    letter-spacing: .12em;
+    line-height: 1em !important;
+    text-transform: uppercase;
+    text-align: center;
+    width: 112px !important;
+    vertical-align: middle;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    border-color: #00ad95;
+    color: #00ad95 !important;
+    text-decoration: none;
+}
+
+#free {
+    margin: 0px 10px;
+    color: #f6f8f9;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: 36px;
+    text-decoration: none;
+    color: #00ad95 !important;
+    ;
+}
+
+#login {
+    margin: 0px 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: 36px;
+    text-decoration: none;
+
+    transition: all .3s ease-out;
+    /* background: #00ad95; */
+
+}
+
+#free:hover {
+    background-color: #00ad95 !important;
+    font-weight: 900;
+    color: #f6f8f9;
+
+}
+
+#login:hover {
+    background-color: #00ad95 !important;
+    color: #f6f8f9;
+
+
+}
