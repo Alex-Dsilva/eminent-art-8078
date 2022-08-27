@@ -7,7 +7,11 @@ video{
     top: -400px;
     background-color: white;
 }
-img{
+
+
+
+#description img{
+
     width: 8%;
     position: relative;
     top: -100px;
