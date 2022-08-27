@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Redirect</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 
     <style>
+
+
+
+       /*------------------------- FOOTER --------------------------*/
             #navbar{
 
         display: flex;
@@ -17,7 +23,7 @@
         background-color: #fff;
         height: 60px;
         position: sticky;
-        top: 60px;
+        top: 58px;
         /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         }
@@ -262,13 +268,17 @@
 </head>
 <body>
 
+      <nav id="nav">
+
+      </nav>
+
     <div id="navbar">
 
           <button><a href="blog.html">BLOG </a></button>
-         <button><a href="">PRODUCTIVITY </a></button> 
-         <button><a href="">REMOTE WORK </a></button>
-         <button><a href="">BEST PRACTICES </a></button>
-         <button><a href="">RESOURCES</a></button>
+         <button><a href="product.html">PRODUCTIVITY </a></button> 
+         <button><a href="remote.html">REMOTE WORK </a></button>
+         <button><a href="best.html">BEST PRACTICES </a></button>
+         <button><a href="resource.html">RESOURCES</a></button>
 
        </div>
 
@@ -384,6 +394,23 @@
             <h4>How Time Tracking Can Solve Your Freelancing Productivity and Budget Problems</h4>
         </div>
 
+     </div>   
+
+
+        <div id="footer">
+
+        </div>
     
 </body>
 </html>
+
+
+<script type="module">
+
+    import {navbar ,footer} from './commonarea/nav-foot.js'
+    document.getElementById("nav").innerHTML=navbar();
+    
+    document.getElementById("footer").innerHTML=footer();
+    
+    
+    </script>

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrations</title>
-    <link rel="stylesheet" href="integrations.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="./styles/integrations.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
    <style>
     
    </style>
@@ -46,8 +46,8 @@
                     <option value="" class="we1">Time Reporting</option>
                 </a>
             </select>
-            <button id="free"><a href="login">Try it Free</a></button>
-            <button id="login"><a href="login">LOGIN</a></button>
+            <button onclick="getlogin()" id="free">LOGIN</button>
+            <button onclick="getsignup()" id="login">SIGNUP</button>
         </div>
 
     </div>
@@ -173,8 +173,17 @@
    
 </script>
 <script type="module">
-    import navbar1 from './footer.js'
+    import navbar1 from './commonarea/footer.js'
+  
   let   footer=document.getElementById("footer");
     footer.innerHTML=navbar1;
+</script>
+<script>
+    function getlogin(){
+        window.location.href="login.html"
+    }
+    function getsignup(){
+        window.location.href="signup.html"
+    }
 </script>
 </html>

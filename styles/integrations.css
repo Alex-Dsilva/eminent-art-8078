@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+#navbar{
+    background-color: coral;
+    height: 60px;
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+#logo img{
+    width: 13%;
+}
+
+>>>>>>> 861fa7da65954a186ad0d64cf3f7da5daad42c6a
 
 
 #integrations h1{
@@ -26,8 +40,18 @@
     outline: none;
 }
 input{
+<<<<<<< HEAD
     font-size: 20px;
     color: black;
+=======
+
+    font-size: 30px;
+    color: red;
+
+    font-size: 20px;
+    color: black;
+
+>>>>>>> 861fa7da65954a186ad0d64cf3f7da5daad42c6a
 }
 ::placeholder{
 font-size: 20px;
@@ -49,6 +73,10 @@ color: black;      }
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 861fa7da65954a186ad0d64cf3f7da5daad42c6a
 }
 #paras{
     width: 80%;

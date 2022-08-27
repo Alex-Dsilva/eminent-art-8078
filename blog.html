@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Archives - TrackingTime</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    
 
 
 </head>
 <body>
 
-    <div id="navbar">
+        <div  id="nav">
 
-        <button><a href="blog.html">BLOG </a></button>
-       <button><a href="product.html">PRODUCTIVITY </a></button> 
-       <button><a href="">REMOTE WORK </a></button>
-       <button><a href="">BEST PRACTICES </a></button>
-       <button><a href="">RESOURCES</a></button>
+        </div>
 
-     </div>
+       <div id="navbar">
 
+        <a id="my" onclick="change()" href="blog.html">BLOG </a>
+        <a id="id" onclick="change1()"  href="product.html">PRODUCTIVITY </a>
+        <a  href="remote.html">REMOTE WORK </a>
+        <a href="best.html">BEST PRACTICES </a>
+        <a  href="resource.html">RESOURCES</a>
+       </div>
 
        <div id="timeCard">
 
@@ -37,56 +41,70 @@
     
 
        <div id="articl-div">
-        <div id="d1">
+
+        <div id="div-1">
               <img src="https://trackingtime.co/wp-content/uploads/2022/07/digital-marketing-agency-tools.svg" alt="">
               <h4>Must-Have Digital Marketing Agency Tools in 2022</h4>
 
         </div>
 
-        <div id="d2">
+        <div>
              <img src="https://trackingtime.co/wp-content/uploads/2022/07/Solve-Your-Freelancing-Productivity-and-Budget-Problems.svg" alt="">
              <h4>How Time Tracking Can Solve Your Freelancing Productivity and Budget Problems</h4>
             </div>
 
-        <div id="d3">
+        <div>
             <img src="https://trackingtime.co/wp-content/uploads/2022/07/Time-tracking-and-ERP-system-1.svg" alt="">
             <h4>Benefits Of Integrating Time Tracking Software With Your Access Control System</h4>
         </div>
 
-        <div id="d4">
+        <div>
             <img src="https://trackingtime.co/wp-content/uploads/2022/06/Time-Management-Strategies-to-Boost-your-Teams-Efficiency.svg" alt="">
             <h4>10 Time Management Strategies to Boost Your Team’s Efficiency</h4>
         </div>
-
-        <div id="d5">
+        <div>
             <img src="https://trackingtime.co/wp-content/uploads/2022/06/Employee-Retention.svg" alt="">
             <h4>6 Best Practices for Employee Retention</h4>
         </div>
-
-        <div id="d6">
+        <div>
             <img src="https://trackingtime.co/wp-content/uploads/2022/06/Employee-Engagement.svg" alt="">
             <h4>A Guide to Employee Engagement: What Is It and Why It’s Important</h4>
         </div>
 
 
-        <div id="d7">
+        <div>
             <img src="https://trackingtime.co/wp-content/uploads/2022/05/Mobile-App-Development-and-Design-Trends.svg" alt="">
             <h4>8 Mobile App Development and Design Trends to Watch Out for in 2022</h4>
         </div>
-
-        <div id="d8">
+        <div>
             <img src="https://trackingtime.co/wp-content/uploads/2022/05/Top-6-Employee-Attendance-Trackers.svg" alt="">
             <h4>Top 6 Employee Attendance Trackers to Consider in 2022</h4>
         </div>
-
-        <div id="d9">
+        <div>
             <img src="https://trackingtime.co/wp-content/uploads/2022/04/How-to-Streamline-Workflows-to-Skyrocket-Conversions.svg" alt="">
            <h4>How to Streamline Workflows to Skyrocket Conversions without Working Longer Hours?</h4> 
         </div>
 
               
        </div>
+
+       <div id="footer">
+
+       </div>
 </body>
 </html>
 
-<script src="blog.js"></script>
+
+<script type="module">
+
+import {navbar ,footer} from './commonarea/nav-foot.js'
+document.getElementById("nav").innerHTML=navbar();
+
+document.getElementById("footer").innerHTML=footer();
+
+
+</script>
+
+<script src="./scripts/function.js"></script>
+
+

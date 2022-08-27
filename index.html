@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -54,8 +54,8 @@
                     <option value="time" class="we1">Time Reporting</option>
                 </a>
             </select>
-            <button id="free">Try it Free</button>
-            <button id="login">LOGIN</button>
+            <button onclick="getsignup()" id="free">Try it Free</button>
+            <button onclick="getlogin()" id="login">LOGIN</button>
         </div>
 
     </div>
@@ -68,7 +68,7 @@
     </div>
     <div class="container786">
         <input type="email" id="email" placeholder="Your Work Email">
-        <a href="login.page" id="vidhayak">Start For FREE!</a>
+        <a href="login.html" id="vidhayak">Start For FREE!</a>
         <div class="google">
             <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/keywords/google-key.png"
                 alt="google icon">
@@ -452,6 +452,12 @@
     else if(link.value==="time_cards"){
         window.location.href="time-cards"
     }
+    }
+    function getlogin(){
+        window.location.href="login.html"
+    }
+    function getsignup(){
+        window.location.href="signup.html"
     }
 
 
