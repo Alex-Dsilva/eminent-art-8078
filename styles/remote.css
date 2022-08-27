@@ -108,15 +108,6 @@
          
     }
 
-    #articl-div>div
-    {
-        cursor: pointer;
-        transition: transform .2s;
-    }
-    #articl-div>div:hover {
-        transform: scale(1.1);
-    }
-
     #articl-div>div{
 
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -127,40 +118,40 @@
 
 
     #articl-div>div:nth-child(1)>img{
-          background-color:rgb(122,220,180) ;
+          background-color:rgb(134, 151, 233);
     }
 
     #articl-div>div:nth-child(2)>img{    
-        background-color:#b88be3;      
+        background-color:#cf2e2e;      
   }
 
 
   #articl-div>div:nth-child(3)>img{      
-    background-color:rgb(251,105,98);   
+    background-color:rgb(235, 192, 74);   
 }
 
 #articl-div>div:nth-child(4)>img{      
-    background-color:#0693e3
+    background-color:rgb(235, 192, 74);
 }
 
 #articl-div>div:nth-child(5)>img{       
-    background-color:#f6c235;   
+    background-color:rgb(120, 230, 186);   
 }
 
 #articl-div>div:nth-child(6)>img{       
-    background-color:#f78da7;   
+    background-color:rgb(237, 83, 83);   
 }
 
 #articl-div>div:nth-child(7)>img{       
-    background-color:#343434;   
+    background-color:rgb(237, 83, 83);   
 }
 
 #articl-div>div:nth-child(8)>img{      
-    background-color:rgb(251,105,98);   
+    background-color:rgb(235, 192, 74) ; 
 }
 
 #articl-div>div:nth-child(9)>img{       
-    background-color:#f6c235;   
+    background-color:rgb(90, 177, 227);   
 }
 
 

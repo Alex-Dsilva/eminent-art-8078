@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productivity | TrackingTime</title>
 
-    <link rel="stylesheet" href="product.css">
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+   
 </head>
 <body>
+
+     <div id="nav">
+
+     </div>
 
     <div id="navbar">
 
         <button><a href="blog.html">BLOG </a></button>
        <button><a href="product.html">PRODUCTIVITY </a></button> 
-       <button><a href="">REMOTE WORK </a></button>
-       <button><a href="">BEST PRACTICES </a></button>
-       <button><a href="">RESOURCES</a></button>
+       <button><a href="remote.html">REMOTE WORK </a></button>
+       <button><a href="best.html">BEST PRACTICES </a></button>
+       <button><a href="resource.html">RESOURCES</a></button>
 
      </div>
 
@@ -36,7 +43,7 @@
     
 
        <div id="articl-div">
-        <div id="d1">
+        <div id="div2">
               <img src="https://trackingtime.co/wp-content/uploads/2019/12/generico-1.svg" alt="">
               <h4>5 Best Ways to Reduce and Manage Overtime for Employees</h4>
 
@@ -86,7 +93,38 @@
               
        </div>
 
+       <div id="footer">
+
+       </div>
+
     
     
 </body>
 </html>
+
+
+
+
+<script type="module">
+
+import {navbar ,footer} from './commonarea/nav-foot.js'
+document.getElementById("nav").innerHTML=navbar();
+
+document.getElementById("footer").innerHTML=footer();
+
+
+</script>
+
+<script>
+
+let pro=()=>{
+
+window.location.href="product-1.html"
+console.log("yes")
+}
+
+document.getElementById("div2").addEventListener("click",pro)
+</script>
+
+
+
