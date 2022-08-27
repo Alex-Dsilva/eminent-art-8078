@@ -193,16 +193,16 @@
         </div>
 
         <div id="para">
-          <p>Sign up with your email<p>
+          <p>Login with your email<p>
         </div>
 
         <div id="details">
-            <input type="text" id="username" placeholder="Username">
+            <input type="email" id="email" placeholder="Email">
             <br>
             <input type="password" id="password" placeholder="Password">
             
             <p id="forgot">Forgot your password? <a href="https://pro.trackingtime.co/#">Retrieve</a></p>
-              <button>LOGIN</button>
+              <button onclick="login()">LOGIN</button>
               <br>
               <p id="goback">Don't have an account? <a href="./signup.html">SIGN UP</a></p>
               <br>
@@ -214,3 +214,35 @@
     
 </body>
 </html>
+<script>
+
+           let arr=JSON.parse(localStorage.getItem("list"))||[];
+
+            function login()
+            {
+             event.preventDefault();
+             let obj={
+            personemail2:document.querySelector("#email").value,
+            personpassword2:document.querySelector("#password").value,
+          }
+          let flag=false;
+          for(let i=0;i<arr.length;i++)
+          {
+            let char=arr[i];
+            if(char.personemail==obj.personemail2 && char.personpassword==obj.personpassword2)
+            {
+                flag=true;
+            }
+          }
+          if(flag==true)
+          {
+            alert("You are successfully Logged In");
+          }
+          else
+          {
+            alert("Wrong Credential");
+          }
+            
+        }
+
+</script>

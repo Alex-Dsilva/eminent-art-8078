@@ -195,24 +195,42 @@
         </div>
 
         <div id="details">
-            <input type="text" id="name" placeholder="Name">
+           
            <br>
             <input type="email" id="email" placeholder="Email">
             <br>
-            <input type="text" id="username" placeholder="Username">
-            <br>
+           
             <input type="password" id="password" placeholder="Password">
             <br>
-            <input type="tel" id="mobile" placeholder="Mobile Number">
-            <br>
-            <input type="text" id="description" placeholder="A short description of your's">
+           
             <input type="checkbox" id="check">
             <p><b>I agree with </b><a href="https://support.trackingtime.co/en/articles/1956503-terms-of-service" >the Terms of service</a> &
               <a href="https://support.trackingtime.co/en/articles/1944754-privacy-policy">Privacy Policy</a></p>
-              <button>SIGN UP</button>
+              <button onclick="register()">SIGN UP</button>
               <p id="goback"> <a href="./login.html">back to login</a></p>
         </div>
       </div>
     
 </body>
 </html>
+<script>
+
+ 
+   let arr=JSON.parse(localStorage.getItem("list"))||[];  
+
+            function register(){
+             event.preventDefault();
+             let obj={
+            personemail:document.querySelector("#email").value,
+            personpassword:document.querySelector("#password").value,
+          
+          }
+          arr.push(obj);
+          localStorage.setItem("list",JSON.stringify(arr));
+
+          alert("Successfully SignedUp! Please Login");
+          window.location.href="./login.html";
+    }
+
+   
+  </script>
