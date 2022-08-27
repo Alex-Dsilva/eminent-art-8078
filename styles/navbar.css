@@ -1,15 +1,15 @@
-
-img {
+.logo>a>img {
     width: 150px;
     margin-left: 40px;
 }
 
 .display {
     display: flex;
-    position: sticky;
+    position: fixed;
+    top: 0px;
     height: 50px;
     padding:20px 0px;
-    top: 0px;
+    width: 100%;
     justify-content: space-around;
 
     background-color: #f6f8f9;
@@ -99,7 +99,7 @@ a {
 
 }
 
-button>a {
+#free>a,#login>a {
     color: #00ad95 !important;
 
 }
