@@ -7,44 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trackingtime.co</title>
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <style>
-    /*  */
+  
+
+    
 </style>
 
 <body>
     <div class="display">
         <div class="logo">
-            <a href="https://trackingtime.co/" itemprop="url">
+            <a href="index.html" itemprop="url">
                 <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/layout/header/logo.svg"
                     alt="TrackingTime">
             </a>
 
         </div>
         <div class="navigation">
-            <a href="intergation.html">INTEGRATIONS</a>
+            <a href="integrations.html">INTEGRATIONS</a>
             <a href="blog.html">BLOG</a>
-            <select name="FEATURES" id="feature">
-                <a href="">
+            <select name="FEATURES" id="feature" onchange="changepage(this)">
+                <a href="#">
                     <option value="">FEATURE</option>
                 </a>
-                <a href="Time Tracker.html" class="we1">
-                    <option value="" id="features" class="we1">Time Tracker</option>
+                <a  href="timetraker.html" class="we1">
+                    <option value="Time Tracker" id="features" class="we1">Time Tracker</option>
                 </a>
-                <a href="Project Management.html" class="we1">
-                    <option value="" class="we1">Project Management</option>
+                <a href="Project-manger.html" class="we1">
+                    <option value="Project Management" class="we1">Project Management</option>
                 </a>
-                <a href="Online Timesheet.html">
-                    <option value="" class="we1">Online Timesheet</option>
+                <a href="online-timesheet.html">
+                    <option value="Online Timesheet" class="we1">Online Timesheet</option>
                 </a>
-                <a href="Time Cards">
-                    <option value="" class="we1">Time Cards</option>
+                <a href="time-cards.html">
+                    <option value="time_cards" class="we1">Time Cards</option>
                 </a>
-                <a href="Attendence Tracking.html">
-                    <option value="" class="we1">Attendence Tracking</option>
+                <a href="attendance-tracker.html">
+                    <option value="attendence" class="we1">Attendence Tracking</option>
                 </a>
-                <a href="Time Reporting.html">
-                    <option value="" class="we1">Time Reporting</option>
+                <a href="time_reporting.html">
+                    <option value="time" class="we1">Time Reporting</option>
                 </a>
             </select>
             <button id="free"><a href="login">Try it Free</a></button>
@@ -66,7 +69,7 @@
             <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/keywords/google-key.png"
                 alt="google icon">
             <a href="https://app.trackingtime.co/v4/google/signin?action=signup&amp;redirect_to=https://pro.trackingtime.co/"
-                data-comp="SignupWithGoogle" target="_blank">Sign in with Google</a>
+                data-comp="SignupWithGoogle" target="_blank" ">Sign in with Google</a>
         </div>
 
     </div>
@@ -77,6 +80,48 @@
     </div>
     <div class="container4">
         <h2>Companies of all shapes and sizes use TrackingTime:</h2>
+        <div class="carousel" data-flickity='{ "groupCells": true }'>
+
+            <div class="carousel-cell">
+                <img class="skip-lazy"
+                    src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo10.jpg"
+                    alt="Project management, collaboration and productivity software">
+
+            </div>
+            <div class="carousel-cell">
+                <img class="skip-lazy"
+                    src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo6.jpg"
+                    alt="Digital Signage">
+            </div>
+            <img class="skip-lazy" src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo7.jpg" alt="Nonprofit ed-tech Initiative">
+            <div class="carousel-cell">
+                <img class="skip-lazy"
+                    src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo6.jpg"
+                    alt="Digital Signage">
+            </div>
+            <img class="skip-lazy" src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo3.jpg" alt="Accounting">
+            <img class="skip-lazy" src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo4.jpg" alt="International programmatic agency">
+            <div class="carousel-cell">
+                <img class="skip-lazy"
+                    src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo6.jpg"
+                    alt="Digital Signage">
+            </div>
+            <div class="carousel-cell">
+                <img class="skip-lazy"
+                    src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo9.jpg"
+                    alt="RFID solutions">
+
+            </div>
+            <img class="skip-lazy" src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo11.jpg" alt="Museum of Modern Art. NY">
+            <div class="carousel-cell">
+                <img class="skip-lazy"
+                    src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/home/logos/color/logo8.jpg"
+                    alt="Global event management">
+            </div>
+        </div>
+    </div>
+
+
     </div>
     <div class="container3">
         <h2 class="r4__out__title">The features your project management app is missing.</h2>
@@ -116,7 +161,7 @@
         </div>
         <div class="maggi">
             <div class="maggi1">
-                <a href="https://trackingtime.co/time-tracking-for-asana">
+                <a href="asana.html">
                     <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/temp/logos/asana.png"
                         alt="ASANA">
                     <h3 class="upper">Asana</h3>
@@ -133,7 +178,7 @@
             </div>
             <div class="maggi1">
 
-                <a href="https://trackingtime.co/time-tracking-for-todoist">
+                <a href="timetraker.html">
                     <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/temp/logos/todoist.png"
                         alt="todoist">
                     <h3 class="upper">todoist</h3>
@@ -142,7 +187,7 @@
 
             </div>
             <div class="maggi1">
-                <a href="https://trackingtime.co/time-tracking-for-smartsheet">
+                <a href="">
                     <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/temp/logos/smartsheet.png"
                         alt="smartsheet">
                     <h3 class="upper">smartsheet</h3>
@@ -252,7 +297,7 @@
     </div>
     <div class="row menus">
         <nav class="col-12-3" tabindex="0">
-           
+
             <ul>
                 <li class="you"><strong>Industries</strong></li>
                 <li><a href="https://trackingtime.co/industry/time-tracking-for-graphic-designers"
@@ -269,7 +314,7 @@
         </nav>
         <nav class="col-12-2" tabindex="0">
             <li class="you"><strong>Products</strong></li>
-    
+
             <ul>
                 <li><a href="https://trackingtime.co/pricing">Plans &amp; Pricing</a></li>
                 <li><a href="https://trackingtime.co/integrations">Integrations</a></li>
@@ -280,7 +325,7 @@
             </ul>
         </nav>
         <nav class="col-12-3" tabindex="0">
-             <li class="you"><strong>FEATURES</strong></li>
+            <li class="you"><strong>FEATURES</strong></li>
             <ul>
                 <li><a href="https://trackingtime.co/features/online-timesheet"
                         title="Online Timesheet For Efficient Companies">Online Timesheet For Efficient Companies</a>
@@ -320,7 +365,7 @@
             </ul>
         </nav>
         <nav class="col-12-2" tabindex="0">
-           <li class="you"><strong>Company</strong></li>
+            <li class="you"><strong>Company</strong></li>
             <ul>
                 <li><a href=""></a><a href="https://trackingtime.co/about-us">About Us</a></li>
                 <li><a href="https://trackingtime.co/blog">Blog</a></li>
@@ -337,23 +382,23 @@
     </div>
 
     <div class="container9">
-        
-            <div class="social">
-                <a href="https://twitter.com/trackingtime" id="twitter" class="gatrack" target="_blank"
-                    aria-label="Twitter"><img src="
+
+        <div class="social">
+            <a href="https://twitter.com/trackingtime" id="twitter" class="gatrack" target="_blank"
+                aria-label="Twitter"><img src="
 
         	https://trackingtime.co/wp-content/themes/trackingtime-v4/img/social/twitterblanco.png" alt=""></a>
-                <a href="https://www.linkedin.com/company/trackingtime-llc" id="linkiden" class="gatrack"
-                    target="_blank" aria-label="Linkedin">
-                    <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/social/linkedinblanco.png"
-                        alt=""></a>
+            <a href="https://www.linkedin.com/company/trackingtime-llc" id="linkiden" class="gatrack" target="_blank"
+                aria-label="Linkedin">
+                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/social/linkedinblanco.png"
+                    alt=""></a>
 
-                <a href="https://www.facebook.com/trackingtime/" id="facebook" class="gatrack" target="_blank"
-                    aria-label="Facebook">
-                    <img src="	https://trackingtime.co/wp-content/themes/trackingtime-v4/img/social/facebookblanco.png"
-                        alt=""></a>
-            </div>
-            <div class="dogesh">
+            <a href="https://www.facebook.com/trackingtime/" id="facebook" class="gatrack" target="_blank"
+                aria-label="Facebook">
+                <img src="	https://trackingtime.co/wp-content/themes/trackingtime-v4/img/social/facebookblanco.png"
+                    alt=""></a>
+        </div>
+        <div class="dogesh">
             <div class="help">
                 <h4>Help & Support</h4>
                 <li>Help Center</li>
@@ -362,21 +407,68 @@
             </div>
             <div class="choose">
                 <h4>Choose Laungage</h4>
-               <select name="laungage" id="Laungage">
-                <option value="English">English</option>
-                <option value="Portugues">Portugues</option>
-                <option value="DUTESH">DUTESH</option>
-                <option value="ESPANOL">ESPANOL</option>
-               </select>
+                <select name="laungage" id="Laungage">
+                    <option value="English">English</option>
+                    <option value="Portugues">Portugues</option>
+                    <option value="DUTESH">DUTESH</option>
+                    <option value="ESPANOL">ESPANOL</option>
+                </select>
             </div>
         </div>
-  
-     
 
-   
+
+
+
     </div>
     <p id="para">support@trackingtime.co</p>
     <p id="para1"> © 2022 TrackingTime, LLC</p>
 </body>
 
 </html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js">
+
+
+
+
+</script>
+<script>
+    function changepage(link){
+    if(link.value==="Time Tracker" ){
+        window.location.href="timetraker.html"
+    }
+    else if(link.value==="Project Management"){
+        window.location.href="Project-manger.html"
+    }
+    else if(link.value==="Online Timesheet"){
+        window.location.href="online-timesheet.html"
+    }
+    else if(link.value==="attendence"){
+        window.location.href="attendance-tracker.html"
+    }
+    else if(link.value==="time_cards"){
+        window.location.href="time-cards"
+    }
+    }
+</script>
+<!-- <a href="#">
+    <option value="">FEATURE</option>
+</a>
+<a  href="timetraker.html" class="we1">
+    <option value="Time Tracker" id="features" class="we1">Time Tracker</option>
+</a>
+<a href="Project-manger.html" class="we1">
+    <option value="Project Management" class="we1">Project Management</option>
+</a>
+<a href="online-timesheet.html">
+    <option value="Online Timesheet" class="we1">Online Timesheet</option>
+</a>
+<a href="time-cards.html">
+    <option value="Time Cards" class="we1">Time Cards</option>
+</a>
+<a href="attendance-tracker.html">
+    <option value="" class="we1">Attendence Tracking</option>
+</a>
+<a href="time_reporting.html">
+    <option value="" class="we1">Time Reporting</option>
+</a>
+</select> -->
