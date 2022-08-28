@@ -23,4 +23,10 @@ let blog=()=>{
 document.getElementById("div-1").addEventListener("click",blog)
 
 
+import {navbar ,footer} from '../commonarea/nav-foot.js'
+document.getElementById("nav").innerHTML=navbar();
 
+document.getElementById("footer").innerHTML=footer();
+
+
+console.log("connect")
