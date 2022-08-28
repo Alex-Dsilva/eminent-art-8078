@@ -45,5 +45,13 @@ function redirect(n){
     }else if(n==4){
         window.location.href="https://trackingtime.co/features/online-timesheet"
     }
-        
+       
     }
+
+    import { navbar ,footer }  from '../commonarea/nav-foot.js';
+
+    let nav=document.getElementById("nav")
+    console.log(nav)
+    nav.innerHTML=navbar()
+    let foot=document.getElementById("footer")
+    foot.innerHTML=footer()
