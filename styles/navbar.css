@@ -1,15 +1,17 @@
-img {
+#imagetracking {
     width: 150px;
     margin-left: 40px;
 }
 
 .display {
     display: flex;
-    position: sticky;
+    position: fixed;
     height: 50px;
     padding: 20px 0px;
     top: 0px;
     justify-content: space-around;
+    align-items: center;
+    width: 99%;
     z-index: 100;
     background-color: #fff !important;
 }
