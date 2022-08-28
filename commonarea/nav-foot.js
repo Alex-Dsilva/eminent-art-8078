@@ -11,7 +11,7 @@ function navbar(){
     <div class="navigation">
         <a href="intergation.html">INTEGRATIONS</a>
         <a href="blog.html">BLOG</a>
-        <select name="FEATURES" id="feature">
+        <select name="FEATURES" id="feature"  onchange="changepage(this)>
             <a href="">
                 <option value="">FEATURE</option>
             </a>
@@ -198,4 +198,30 @@ function footer(){
 
 
 
-export  {navbar ,footer};
+function changepage(link){
+    if(link.value==="Time Tracker" ){
+        window.location.href="timetraker.html"
+    }
+    else if(link.value==="Project Management"){
+        window.location.href="Project-manger.html"
+    }
+    else if(link.value==="Online Timesheet"){
+        window.location.href="online-timesheet.html"
+    }
+    else if(link.value==="attendence"){
+        window.location.href="attendance-tracker.html"
+    }
+    else if(link.value==="time_cards"){
+        window.location.href="time-cards.html"
+    }
+    }
+    function getlogin(){
+        window.location.href="login.html"
+    }
+    function getsignup(){
+        window.location.href="signup.html"
+    }
+
+
+
+export  {navbar ,footer,changepage};
