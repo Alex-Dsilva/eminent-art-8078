@@ -219,7 +219,7 @@
 <script>
 
  
-   let arr=JSON.parse(localStorage.getItem("list"))||[];  
+   let arr=JSON.parse(localStorage.getItem("users"))||[];  
 
             function register(){
              event.preventDefault();
@@ -229,7 +229,7 @@
           
           }
           arr.push(obj);
-          localStorage.setItem("list",JSON.stringify(arr));
+          localStorage.setItem("users",JSON.stringify(arr));
 
           alert("Successfully SignedUp! Please Login");
           window.location.href="./login.html";
