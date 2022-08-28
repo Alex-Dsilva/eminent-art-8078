@@ -11,6 +11,7 @@ img {
     padding:20px 0px;
     top: 0px;
     justify-content: space-around;
+    z-index:100;
 
     background-color: #f6f8f9;
 }

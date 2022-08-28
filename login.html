@@ -218,7 +218,7 @@
 </html>
 <script>
 
-           let arr=JSON.parse(localStorage.getItem("list"))||[];
+           let arr=JSON.parse(localStorage.getItem("users"))||[];
 
             function login()
             {
@@ -239,6 +239,7 @@
           if(flag==true)
           {
             alert("You are successfully Logged In");
+            window.location.href-"./index.html";
           }
           else
           {
