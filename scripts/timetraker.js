@@ -47,6 +47,10 @@ if(n==1){
     
 }
 
-import navbar1  from './footer.js';
+import { navbar ,footer }  from '../commonarea/nav-foot.js';
 
-console.log(navbar1);
+let nav=document.getElementById("nav")
+console.log(nav)
+nav.innerHTML=navbar()
+let foot=document.getElementById("footer")
+foot.innerHTML=footer()
