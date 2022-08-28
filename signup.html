@@ -134,26 +134,32 @@
        height:25px;
        width:30%;
     }
-    #details>button{
+
+
+
+  #details>button{
        margin: auto;
        display: block;
        height:25px;
        width:30%;
        margin-top: 20px;
     }
-    input{
-      text-align: center;
-    }
-    button{
-         background-color: rgb(77, 75, 75);
-         color:white;
-         font-size: small;
-         border: 0px;
-         border-radius: 5px;
-    }
     #details>button:hover{
     background-color:black;
   }
+    input{
+      text-align: center;
+    }
+    #details>button{
+         background-color: rgb(50, 50, 50);
+         color:white;
+         font-size:small;
+         border: 0px;
+         border-radius: 5px;
+         height:40px;
+    }
+
+
     #goback{
       text-align: center;
       color: rgb(60, 59, 59);
@@ -226,7 +232,7 @@
              let obj={
             personemail:document.querySelector("#email").value,
             personpassword:document.querySelector("#password").value,
-          
+            lists:[],
           }
           arr.push(obj);
           localStorage.setItem("users",JSON.stringify(arr));
