@@ -1,18 +1,17 @@
-
-img {
+.logo>a>img {
     width: 150px;
     margin-left: 40px;
 }
 
 .display {
     display: flex;
+    align-items: center;
     position: sticky;
     height: 50px;
-    padding:20px 0px;
+    padding:20px 25px;
     top: 0px;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index:100;
-
     background-color: #f6f8f9;
 }
 
@@ -21,7 +20,11 @@ img {
     font-weight: bolder;
 
 }
-
+.navigation {
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+}
 a {
     padding: 15px;
     text-decoration: none;
@@ -69,7 +72,36 @@ a {
     color: #00ad95 !important;
     ;
 }
-
+#calloption{
+    display: none;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid black;
+    position: relative;
+    top: 20px;
+}
+#calloption>li{
+    padding: 15px 0px;
+    text-align: left;
+}
+#calloption>li>a{
+    text-decoration: none;
+    color: black;
+}
+#feature{
+    position: relative;
+}
+#feature:hover{
+    top: 150px;
+}
+#feature:hover #calloption{
+    display: block;
+    list-style: none;
+}
+.fa-chevron-down{
+    font-size: 20px;
+    color: aquamarine;
+}
 #login {
     margin: 0px 10px;
     color: black;
@@ -96,6 +128,5 @@ a {
 #login:hover {
     background-color: #00ad95 !important;
     color: #f6f8f9;
-
 
 }

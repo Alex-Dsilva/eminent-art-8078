@@ -30,7 +30,8 @@
 #search{
     width: 800px;
     height: 80px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 5px 10px;
     /* border-radius: 5%; */
     border: none;
     outline: none;
@@ -53,7 +54,7 @@ color: black;      }
 
 #container img{
     width: 10%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 15px;
 }
 #container{
