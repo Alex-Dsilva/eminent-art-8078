@@ -9,10 +9,7 @@ body{
     margin: auto;
     text-align: center;
 }
-#main{
-    height: 6000px;
-    border: 1px solid red;
-}
+
 #img{
     width: 450px;
     height: 350px;

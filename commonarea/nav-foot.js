@@ -11,31 +11,18 @@ function navbar(){
     <div class="navigation">
         <a href="intergation.html">INTEGRATIONS</a>
         <a href="blog.html">BLOG</a>
-        <select name="FEATURES" id="feature"  onchange="changepage(this)>
-            <a href="">
-                <option value="">FEATURE</option>
-            </a>
-            <a href="Time Tracker.html" class="we1">
-                <option value="" id="features" class="we1">Time Tracker</option>
-            </a>
-            <a href="Project Management.html" class="we1">
-                <option value="" class="we1">Project Management</option>
-            </a>
-            <a href="Online Timesheet.html">
-                <option value="" class="we1">Online Timesheet</option>
-            </a>
-            <a href="Time Cards">
-                <option value="" class="we1">Time Cards</option>
-            </a>
-            <a href="Attendence Tracking.html">
-                <option value="" class="we1">Attendence Tracking</option>
-            </a>
-            <a href="Time Reporting.html">
-                <option value="" class="we1">Time Reporting</option>
-            </a>
-        </select>
-        <button id="free"><a href="login">Try it Free</a></button>
-        <button id="login"><a href="login">LOGIN</a></button>
+       <ul name="FEATURES" id="feature" >FEATURES <i class="fa-solid fa-chevron-down"></i>
+        <ul id="calloption">
+            <li><a href="timetraker.html">Time Tracker</a></li>
+            <li><a href="Project-manger.html">Project Management</a></li>
+            <li><a href="online-timesheet.html">Online Timesheet</a></li>
+            <li><a href="time-cards.html">Time Cards</a></li>
+            <li><a href="attendance-tracker.html">Attendence Tracking</a></li>
+            <li><a href="time_reporting.html">Time Reporting</a></li>
+        </ul>
+       </ul>
+        <button id= "free"><a href="login.html">Try it Free</a></button>
+        <button id="login"><a href="login.html">LOGIN</a></button>
     </div>
 
 </div>`
