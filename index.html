@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trackingtime.co</title>
     <link rel="stylesheet" href="./styles/navbar.css">
+    <script src="https://kit.fontawesome.com/b3bad2b493.js" crossorigin="anonymous"></script>
+    
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -22,24 +24,26 @@
 <body>
     <div class="display">
         <div class="logo">
-            <a href="https://trackingtime.co/" itemprop="url">
+            <a href="index.html">
                 <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/layout/header/logo.svg"
                     alt="TrackingTime">
             </a>
     
         </div>
+        
         <div class="navigation">
             <a href="integrations.html">INTEGRATIONS</a>
             <a href="blog.html">BLOG</a>
+           <!-- <ul name="FEATURES" id="feature" >FEATURES <i class="fa-solid fa-chevron-down"></i> -->
            <ul name="FEATURES" id="feature" >FEATURES <i class="fa-solid fa-chevron-down"></i>
-            <ul id="calloption">
+            <div id="calloption">
                 <li><a href="timetraker.html">Time Tracker</a></li>
                 <li><a href="Project-manger.html">Project Management</a></li>
                 <li><a href="online-timesheet.html">Online Timesheet</a></li>
                 <li><a href="time-cards.html">Time Cards</a></li>
                 <li><a href="attendance-tracker.html">Attendence Tracking</a></li>
                 <li><a href="time_reporting.html">Time Reporting</a></li>
-            </ul>
+            </div>
            </ul>
             <button id= "free"><a href="login.html">Try it Free</a></button>
             <button id="login"><a href="login.html">LOGIN</a></button>
@@ -54,13 +58,16 @@
         </h4>
     </div>
     <div class="container786">
-        <input type="email" id="email" placeholder="Your Work Email">
-        <a href="login.html" id="vidhayak">Start For FREE!</a>
-        <div class="google">
-            <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/keywords/google-key.png"
-                alt="google icon">
-            <a href="https://app.trackingtime.co/v4/google/signin?action=signup&amp;redirect_to=https://pro.trackingtime.co/"
-                data-comp="SignupWithGoogle" target="_blank" ">Sign in with Google</a>
+        <div id="email_start">
+            <input type="email" id="email-input" placeholder="Your work Email">
+            <button id="start-w-email" class="btn" >START FOR FREE!</button>
+            <p id="err"></p>
+            <p id="textun">14-day PRO trial included</p>
+            <div id="g-signup">
+                <img id="img" src="data:image/png;base64,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" alt="G-logo">
+                <h3><a href="#">Sign in with Google</a></h3>
+            </div>
+        </div>
         </div>
 
     </div>
@@ -248,17 +255,16 @@
             <div class="keydesktop">
                 <p>Sign up today and join thousands of people around the world using TrackingTime to simplify their
                     timesheets.</p>
-                <div class="googleform2">
-                    <input type="email" placeholder="Your Work Email" id="googlememail">
-                    <a href="login.html" id="login23">Start For Free</a>
-                </div>
-                <p id="daypro">14-day PRO trial included</p>
-                <div class="google4">
-                    <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/keywords/google-key.png"
-                        alt="google icon" id="google_image">
-                    <a href="https://app.trackingtime.co/v4/google/signin?action=signup&amp;redirect_to=https://pro.trackingtime.co/"
-                        data-comp="SignupWithGoogle" target="_blank" id="googlelink">Sign in with Google</a>
-                </div>
+                    <div id="email_start">
+                        <input type="email" id="email-input" placeholder="Your work Email">
+                        <button id="start-w-email" class="btn" >START FOR FREE!</button>
+                        <p id="err"></p>
+                        <p id="textun">14-day PRO trial included</p>
+                        <div id="g-signup">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABO1BMVEX////nQTMyp1M+gvH5uwA5gPFjmPMzffGevvf5uAD3+v5OjPLmMyHnPC0spU/5vAD/vAAho0jmOivmMB3h6/0dokb+9Nc+gPbmNibufnb0tbLmOTT++ef40M37393++vrvi4TuhHz6wymn1bOx2LrramHwkovyoZv0saz3yMX85+XpUkboSTvxmZPqWk/98/L6xT/udiP70W//+/H846f96Ln72Yr6ylD97cH83pxCrWAhdvC80fqr2LbW7NuBxZLv+PGZz6Y5k7A2nIoxqUJou353vojrZFrlJgztbCbwgh71oBLqWSzzkxj2qQ3oTC/sc233wrRhl/N7qPXJ2/vO37nfuBK7tCiLrzhZqkiZuffMth+fsTFtrEHcuBjW4/xWtG8ug9Syyvkzo2Y6jsQ3l581oHk9h97F5M0G9JwkAAAITklEQVR4nO2aaXvaRhCAZVnYwZYEQiEVNGASc4NxGrs5SAKiDdi9UtdJ0yZNE3r7//+CSiADEpJ2Vxqxkp99P/iDn0Sr1zM7s4c4jsFgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMIg7a5VKxUa8UCoVazfhRqTearXL7mPZ7wVAqVmqdLVEVNS1nIEnmT00TVVXq9gqNVpv2C4bhoHXUE0XRsNpyR8pporhVKCbTst2sqarm5bZKTjzv1EsJS9ly40zEsrsOpqZ275VovzU+xTONRG8Ryu5RItK1XVdFcr052nkt9oEsFVQtoN48kGqvRdvBj1JNzYXxM5Fi7Fi+UIOmp8OxE0vHduUcxG/meH4Rv5rT3Ao1/5zktMYBbSUb5Z4K6Wcidsq0rVaow0xAO5Jaj0sYyz0R3s9E7MUjjMUA6xdMJK1I286gAD4DV1ErtP3aXdASuo7Yo7vpKHlu/cDIdWlOxgin4BJJorcab0Q6BZeK57QU65sR3BLvMcFoqGxKsHDTBWlFcENFhp5g86YLtm76HCzf9AgedzewkqEpyF0EXGzPbilMNO+bjFgIHpHnqJQTRal7VjhqFk2OzNsoDXGpQW0OcqVzUj1N7RSaJcfh2UG5VT/LiZ7Hq/QiSDoJc2qvUfY6b2kXL0T3ExB6gtw9kkkoiWoFsbs7bm65HGPRS1GiTiiJ3SbOaVnrzHmVQzGCxwQBxPQzadmPWykKchXsHM2dN0gOWIrasubQFMRfzIg1wouH44vrZ1Ocgxx3hllHpVyT/OHWoQ/NCHJFzLNtLdiVQ7mToyx40MELoVoIeN9wfKapNFMUd1OoNoIPcUFVkPvmcyzBAFMwJjxNf4uhqMbhLiUgGSHz3RbKMcmCp2lByKS/91dMcIpy3APBICN84acYpshQ505amClmfvBW1OhWwpA8nBsajq9+9HCUenG5dw/CibAgI3i0DS1+38AQcJpeUcy4to0kl1HOqjNLR5e2kavRfsdQ3E0LdsX1tpHsHDXWM4JDMeNoG2KSGwXnTFKrbdjqaCfJddRI0jVBZ9sQk11muC+dSWqFcdE2pA7tVwzJQ1fDlbaR8E7BcfddBVfbBu03DImzV6y1DS3hhdRjGl5nqtE2Et4LOe6Rj6HZNnIXtN8wLI99BE3HVz/RfsOwZPwNhcxd/Gftvb7cAeHyNZygT6GZ84DgYXv7uykYduEMnyAM00+JDFPbMDy7DWZ4ijK8Q8Vw9w2YoW8pNQ1JHgZo+CeY4WOE4X1Khu/BDD3XbFYIH9ExTMEVU0SzSJ9SMrwEM0RNwyd0DLf3oQRPUIYE/R7UEKwhohp++oSW4R6Q4R2EYYboaUk0JGoWoIZQixpmyAyZYfwN6dVSKMP49kMow/iuacC2wHFdl8IZxnRvAbemiev+EG7lHdc9PqBhTM9pUmD7w7ietaV2wAxjel66C3dOA3zmDWZ4C8wQeW8hkNxbxPG8FHX3lBV+JjHcxQVlCHfmjSim2bfKmMDwFjaIYD8Da/j+d8BC9heZV3S4wZY88zdMAQ7lU2qywq88zysjwNGueeOfpoDNgvNZt2XfvuNnQI5m8d7fEPDagvP8nkbI/ibPBfNVyOHmIIouZCn1nIjZD7yF3IccbsZtRC0FvCDlPL5ry2Z+5xco4EG8heoWgKWUc/s2Uch+fLcUjCCIiCSFLTQu35caTYK3oRzCjoiopKBrNhNnv5g3CbuiDjriDqLf734CHc6ZposmsZqnU8jxPiHaPfQ0dOwRF03CBmjHuESEEPCK2+JkVfCDix9snj5HLrufg411zaLp25pERHm6t43aYkEuuy2uz/azH90y1AriBGiw16gQQveKGQ+sJuEtaExFmBU4MkejSNJ5rXFpEg7FFwAjodZrZgzhk5QzzzLcmoRTMXxBRU9CyEOoVZ66Nwloxb1LdAjB273FBwzB0Im6t4ORo3BfQ9k5zOMYhis3OBEE3hqu0scKIp8nOJhycHsfQ3B7G9DJThUviLzSHwQb4A26yEQaQo6b4gWRl+VAeynEyczCMJJWMWeAGUQjjFOd+OHTPz7DEgTeGdoZKriKcn6kkzxZH+bll19hKKbA90329+Ax89QMYx+/b+gj3vzbvfwao9tHOAtNrrDz1AxjH286Wn7mX+Wv/xBhBLwX9WCCnaemo5IfIsvq1TivrPyPv/0Vn0W0nFlCkqfzQE5HA93zadWhnLc/8OU/KZ9MjWhFaoMkT68D2Z8crlnqg+pw6tSbKf677x3GaDYVDkakimZ/VBSZn05G1Rmj4WTKm79yTwel79k2ItkXrjMmy1Ob5xzZw+36H3q1jU3kqImOuT4NgXvbiLgVroC/tAmMa9uIvo4uIK425MjyWtuIdrnm4EX0imttY1OT0CJAQSVXtLWN1P6mJqHFcAOKq20jtZFOuHHFZdtIpUCvfDEVSVaoQbHaRioF+HkQgeIGomi1Dcjvn0jYRLmZtY0NNkIHVSXy1Q1vtg1KETS5ItxLBUHmA57cwaD3o643Sl+nKWgwiXYyhjheBiPKySgD3UiGZBBZpsryFW05i6HLYQQA+bFO22zBYAo/G2U+gg8eQ3DIw6aqnJ/otJ0c6KCpmu/HZQauMhgDOcoKD/HFQxSAOBp+sWgRHgwm+XDz0bzs0Glb+GPMx8BLAFnOT+M4/9aoTpUgkkZ6ou9x4sJgRChpRI+fJCJ8S/TDsYKXr7J5dzO80mm/cRCujFDmfW4pZFPOsKvqtN80DIPqcNznDVHTdIGiGL/h+9Nh1ftyMVHog0F1NBxOJpPx2PgxHI4Oq4Mb4sZgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBiMTfE/YkwlCwSLq9QAAAAASUVORK5CYII=" alt="G-logo">
+                            <h3><a href="#">Sign in with Google</a></h3>
+                        </div>
+                    </div>
 
             </div>
         </div>
@@ -271,18 +277,16 @@
         <h4>Get Started</h4>
         <p class="getp">Sign up today and join thousands of people around the world using <br>
             TrackingTime to make the most of their time.</p>
-        <div class="googlelink">
-            <div class="chowmein">
-                <input type="text" id="know" placeholder="Your Work Email">
-                <a href="login.html" id="know1">Start For Free</a>
-
-            </div>
-            <p id="burger">14-day PRO trial included</p>
-            <div class="linkbazzi">
-                <img src="https://trackingtime.co/wp-content/themes/trackingtime-v4/img/keywords/google-key.png"
-                    alt="google icon">
-                <a href="https://app.trackingtime.co/v4/google/signin?action=signup&amp;redirect_to=https://pro.trackingtime.co/"
-                    data-comp="SignupWithGoogle" target="_blank" id="alpha">Sign in with Google</a>
+        <div id="googlelink">
+            <div id="email_start">
+                <input type="email" id="email-input" placeholder="Your work Email">
+                <button id="start-w-email" class="btn" >START FOR FREE!</button>
+                <p id="err"></p>
+                <p id="textun">14-day PRO trial included</p>
+                <div id="g-signup">
+                    <img src="data:image/png;base64,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" alt="G-logo">
+                    <h3><a href="#">Sign in with Google</a></h3>
+                </div>
             </div>
         </div>
     </div>

@@ -21,9 +21,19 @@
     font-weight: 600;
 }
 
-/* .googlelink {
-    border: 2px solid black;
-} */
+#googlelink {
+    color: #242a30;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #242a30;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-items: left;
+}
+#email_start{
+    text-align: center;
+}
 
 .chowmein {
     margin-top: 5px;
