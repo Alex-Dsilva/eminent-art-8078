@@ -7,25 +7,29 @@
     margin: auto;
 }
 #logo img{
-    width: 13%;}
+    width: 13%;
+}
 
 
 #integrations h1{
-    /* font-weight: 10; */
     font-size:55px;
-    margin-bottom: -40px;
-    /* margin-top: -1px; */
+    line-height: 50px;
+}
+#integrations h2{
+    line-height: 50px;
 }
 #chrome{
     margin-bottom: -30px;
 }
 #integrations{
     width: 80%;
-    margin: auto;;
+    margin: auto;
+    margin-top: 150px;
 }
 #youAll{
     margin-top: 40px;
-    word-spacing: 15px;
+    word-spacing: 5px;
+    +9]
 }
 #search{
     width: 800px;
@@ -62,7 +66,7 @@ color: black;      }
     grid-template-columns: repeat(3,1fr);
     width: 80%;
     margin: auto;
-    gap: 25px;
+    gap: 50px;
 }
 #container p{
     font-size: 18px;

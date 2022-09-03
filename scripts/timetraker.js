@@ -32,6 +32,20 @@ let setimg=(ele)=>{
     
 }
 
+let flog=document.getElementById("start-w-email")
+flog.addEventListener("click",()=>{
+   let val= document.getElementById("email-input").value
+   if(val==""){
+    let err= document.getElementById("err")
+    err.innerText="invalid-input-response. Please reload the page and try again."
+    err.style.display="block"
+    setTimeout(()=>{
+        err.style.display="none"
+    },3000)
+   }else{
+    window.location.href="login.html"
+   }
+})
 
 function redirect(n){
 

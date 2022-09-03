@@ -3,25 +3,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    /* margin-top: 1px; */
     gap: 30px;
     background-color: #fff;
+    z-index: 50;
     height: 60px;
     position: sticky;
     top: 80px;
+
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   
     }
 
     #navbar a{
-
     text-decoration: none;
     font-size: 16px;
     color: black;
+    height: 50%;
+    border: none;
+    }
+    #navbar a:hover{
+        border-bottom: 3px solid green;
     }
 
       #navbar>button{
-
           height: 100%;
           text-decoration: none;
           border: none;
@@ -112,6 +117,7 @@
     #articl-div>div
     {
         cursor: pointer;
+        padding-bottom: 20px;
         transition: transform .2s;
         
     }
